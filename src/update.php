@@ -3,7 +3,7 @@ include ('../backend/config.php');
 include('../template/header.php');
 
 if(count($_POST)>0) {
-mysqli_query($conn,"UPDATE monhoc set ten_mh='" . $_POST['ten_mh'] . "',sotinchi='" . $_POST['sotinchi'] . "', sotiet_lt='" . $_POST['sotiet_lt'] . "', sotiet_bt='" . $_POST['sotiet_bt'] . "' ,sotiet_thtn='" . $_POST['sotiet_thtn'] . "',sogio_tuhoc='" . $_POST['sogio_tuhoc'] . "' WHERE bd_id='" . $_GET['bd_id'] . "'");
+mysqli_query($conn,"UPDATE monhoc set ten_mh='" . $_POST['ten_mh'] . "',sotinchi='" . $_POST['sotinchi'] . "', sotiet_lt='" . $_POST['sotiet_lt'] . "', sotiet_bt='" . $_POST['sotiet_bt'] . "' ,sotiet_thtn='" . $_POST['sotiet_thtn'] . "',sogio_tuhoc='" . $_POST['sogio_tuhoc'] . "' WHERE mamh='" . $_GET['mamh'] . "'");
 Header('location: http://localhost/CSE485_K61_KTGK_1951060564/');
 }else {
 }
