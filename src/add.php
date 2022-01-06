@@ -9,7 +9,7 @@ if(isset($_POST['save']))
 	$sotiet_thtn = $_POST['sotiet_thtn'];
 	$sogio_tuhoc = $_POST['sogio_tuhoc'];
 
-	$sql = "INSERT INTO monhoc (mamh, ten_mh, sotinchi, sotiet_lt, sotiet_bt, sotiet_thtn, sogio_tuhoc)
+	$sql = "INSERT INTO monhoc (ten_mh, sotinchi, sotiet_lt, sotiet_bt, sotiet_thtn, sogio_tuhoc)
 	VALUES ('$ten_mh','$sotinchi','$sotiet_lt','$sotiet_bt','$sotiet_thtn','$sogio_tuhoc')";
 	if (mysqli_query($conn, $sql)) {
 		Header('location: http://localhost/CSE485_K61_KTGK_1951060564/');
